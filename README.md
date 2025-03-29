@@ -35,20 +35,6 @@ streamlit run app.py
 
 ---
 
-## 🏢 Model Download
-
-Ensure you have the required **Ghibli-Diffusion model** downloaded from Hugging Face:
-
-```python
-from diffusers import StableDiffusionImg2ImgPipeline
-import torch
-
-pipe = StableDiffusionImg2ImgPipeline.from_pretrained("nitrosocke/Ghibli-Diffusion", torch_dtype=torch.float16)
-pipe.to("cuda" if torch.cuda.is_available() else "cpu")
-```
-
----
-
 ## 🤝 Contributing
 
 Feel free to **submit issues**, suggest enhancements, or contribute to improving the project. 
